@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste onload</title>
+</head>
+<body>
+    <img src="https://i.pinimg.com/originals/fb/33/3c/fb333c6f69125fa24e02537d03d6c167.jpg" onload="loadImage()" width="150" height="150">
+
+<script>
+function loadImage() {
+  alert("imagem carregada");
+}
+</script>
+<body onload="checkCookies()">
+
+    <p id="teste"></p>
+    
+    <script>
+    function checkCookies() {
+      let text = "texto teste";
+      document.getElementById("teste").innerHTML = text;
+    }
+    </script>
+</body>
+</html>
